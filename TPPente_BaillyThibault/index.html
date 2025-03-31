@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TPJS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript" src="App.js"></script>
+</head>
+<body>
+<form method="post" action="">
+    <!-- Quotient pente -->
+    <b>
+        <p class="pente">Pente(%) = </p>
+    </b>
+    <b class="denivele"> Dénivelé <input type="text" id="denivele" placeholder="(m)"></b>
+    <hr class="div1" />
+    <b class="distanceParcourue"> Distance parcourue <input type="text" id="distanceParcourue" placeholder="(m)"></b>
+    <b class="bouttonPente">
+        <button onclick="quotientPente()">Calculer</button>
+    </b>
+    <br />
+    <!-- Quotient vitesse -->
+    <b class="vitesse"> Vitesse km/h =</b>
+    <b class="distance">
+        Distance <input type="text" id="distanceKm" placeholder="(Km)">
+        <input type="text" id="distanceM" placeholder="(m)">
+    </b>
+    <hr class="div2" />
+    <b class="duree">
+        Durée parcours <input type="text" id="heures" placeholder="(HH)" style="width: 100px;">
+        <input type="text" id="minutes" class="ClasseInput" placeholder="(mm)" style="width: 100px;">
+        <input type="text" id="secondes" class="ClasseInput" placeholder="(s)" style="width: 100px;">
+    </b>
+    <b class="bouttonVitesse">
+        <button type="button" onclick="quotientVitesse()">Calculer</button>
+    </b>
+    <br />
+    <!-- Produit Denivele-->
+    <b class="Denivele"> Dénivelé (m) = </b>
+    <b class="Pente">Pente <input type="text" id="Pente" placeholder="(%)" style="width: 75px;"></b>
+    <b class="distanceParcourue2">* Distance parcourue <input type="text" id="DistanceParcourue2" placeholder="(m)" style="width: 75px;"></b>
+    <b class="bouttonDenivele">
+        <button type="button" onclick="produitDenivele()">Calculer</button>
+    </b>
+    <!-- Poids total avec les coef -->
+    <b class="poidsTotal"> Poids total avec vélo = <input type="number" style="width: 100px;"></b>
+    <br />
+    <b class="scx">Scx = <input type="number" step="0.01" min="0.20" max="0.40" style="width: 70px;"> (0.2 à 0.4) </b>
+    <b class="f">f = <input type="number" step="0.0001" min="0.0024" max="0.0030" style="width: 90px;"> (0.0024 à 0.0030) </b>
+    <b class="bouttonPoidstotal">
+        <button type="button" onclick="coefficient()">Calculer</button>
+    </b>
+    <br />
+    <!-- Puissance du cycliste-->
+    <b class="puissanceCyclisteWatts">Puissance du Cycliste en Watts = <input type="text" style="width: 100px;"></b>
+    <b class="puissanceCyclisteWattskilogrammes">Puissance du Cycliste en Watts/Kilogrammes = <input type="text" style="width: 100px;"></b>
+    <b class="EnergieDepensee">Energie dépensée en Kcal = <input type="text" style="width: 100px;"></b>
+</form>
+</body>
+</html>
